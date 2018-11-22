@@ -8,10 +8,10 @@ public class CreditService {
         int hundredPercent = 100;
         double percentageRate = (double) loanRate / (double) hundredPercent;
         double monthRate = percentageRate / (double) monthYear;
-        double baseDegree = (double) constantsOne +  monthRate;
+        double baseDegree = (double) constantsOne + monthRate;
         double exponentiation = Math.pow(baseDegree, creditTerm);
 
-        int monthlyPayment = (int)(((monthRate / (exponentiation - constantsOne)) + monthRate) * creditAmount);
+        int monthlyPayment = (int) (((monthRate / (exponentiation - constantsOne)) + monthRate) * creditAmount);
 
         return monthlyPayment;
     }
