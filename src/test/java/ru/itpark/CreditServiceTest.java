@@ -10,8 +10,8 @@ class CreditServiceTest {
     void calculatePayment() {
         {
             CreditService service = new CreditService();
-            double payment=service.calculatePayment(70000, 12,18);
-            assertEquals(6418, payment);
+            int payment = service.calculatePayment(70_000, 12, 18);
+            assertEquals(6_418, payment);
         }
     }
 }
