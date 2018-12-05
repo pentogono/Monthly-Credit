@@ -8,7 +8,7 @@ public class CreditService {
         double baseDegree = (double) 1 + monthRate;
         double exponentiation = Math.pow(baseDegree, creditTerm);
 
-        int monthlyPayment = (int) (((monthRate / (exponentiation - 1)) + monthRate) * creditAmount);
+        int monthlyPayment = (int) ((monthRate / (exponentiation - 1) + monthRate) * creditAmount);
 
         return monthlyPayment;
     }
