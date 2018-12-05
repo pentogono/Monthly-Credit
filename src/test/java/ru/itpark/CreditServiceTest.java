@@ -11,7 +11,7 @@ class CreditServiceTest {
         {
             CreditService service = new CreditService();
             int payment = service.calculatePayment(70_000, 12, 18);
-            assertEquals(6_418, payment);
+            assertEquals(6_417, payment);
         }
     }
 }
